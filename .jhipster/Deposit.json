@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "bookingCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "currencyCode",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180124092353",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "deposit",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "PaymentService",
+    "searchEngine": "elasticsearch"
+}

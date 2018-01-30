@@ -39,9 +39,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/PaymentService?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://localhost:3306/PaymentService?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
-        password:
+        password: 123456
         hikari:
             data-source-properties:
                 cachePrepStmts: true
@@ -178,3 +178,11 @@ jhipster:
 # ===================================================================
 
 application:
+napas:
+  gateway:
+    vpc-url: https://sandbox.napas.com.vn/gateway/vpcpay.do
+    merchant-id: SMLTEST
+    access-code: ECAFAB
+    secure-hash: 198BE3F2E8C75A53F38C1C4A5B6DBA27
+    username: usertest
+    password: passtest

@@ -2,6 +2,7 @@ package com.booking.payment;
 
 import com.booking.payment.config.ApplicationProperties;
 import com.booking.payment.config.DefaultProfileUtil;
+import com.booking.payment.config.NapasGatewayProperties;
 
 import io.github.jhipster.config.JHipsterConstants;
 
@@ -24,7 +25,7 @@ import java.util.Collection;
 
 @ComponentScan
 @EnableAutoConfiguration(exclude = {MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class})
-@EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
+@EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class, NapasGatewayProperties.class})
 @EnableDiscoveryClient
 public class PaymentServiceApp {
 
